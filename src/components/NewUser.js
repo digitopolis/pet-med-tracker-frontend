@@ -28,13 +28,24 @@ class NewUser extends React.Component {
 				<form onSubmit={this.handleSubmit}>
 					<label>
 						Username:
-						<input 
+						<input
 							type='text'
 							name='username'
 							value={this.state.username}
 							onChange={this.handleChange}
 						/>
 					</label>
+					<br/>
+					<label>
+						Password:
+						<input
+							type='password'
+							name='password'
+							value={this.state.password}
+							onChange={this.handleChange}
+						/>
+					</label>
+					<br/>
 					<input type='submit'/>
 				</form>
 			</div>
